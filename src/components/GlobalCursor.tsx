@@ -1,11 +1,15 @@
-import { useEffect, useState, useRef } from 'react';
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+
+interface CursorPosition {
+  x: number;
+  y: number;
+}
 
 const GlobalCursor: React.FC = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [trail, setTrail] = useState<Array<{x: number, y: number}>>([]);
+  const [position, setPosition] = useState<CursorPosition>({ x: 0, y: 0 });
+  const [trail, setTrail] = useState<CursorPosition[]>([]);
   const trailRef = useRef<HTMLDivElement[]>([]);
-  const animationFrame = useRef<number>();
+  const animationFrame = useRef<number | null>(null);
   const TRAIL_LENGTH = 8;
   const TRAIL_DELAY = 2;
   const frameCount = useRef(0);
@@ -28,7 +32,7 @@ const GlobalCursor: React.FC = () => {
           }
           
           frameCount.current++;
-          animationFrame.current = undefined;
+          animationFrame.current = null;
         });
       }
     };

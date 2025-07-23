@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import Cursor from './components/Cursor';
 // Page Imports
 import Home from './pages/Home';
 import WhoAmI from './pages/WhoAmI';
@@ -12,7 +14,7 @@ import NandAka from './pages/NandAka';
 import DevDat from './pages/DevDatNew';
 import DataTreyaPage from './pages/data-treya';
 import ExpertsTalk from './pages/ExpertsTalk/ExpertsTalk';
-import KalkiOS from './pages/KalkiOS/KalkiPage';
+import KalkiOS from './pages/KalkiOS/KalkiOS';
 import GesturePage from './pages/gesture-ai/GesturePage';
 import { ThemeProvider } from './context/ThemeContext';
 import ParticleBackground from './components/ParticleBackground';
@@ -25,7 +27,7 @@ function AppContent() {
 
   return (
     <Router>
-      <div className="min-h-screen w-full overflow-y-auto relative">
+      <div className="min-h-screen w-full overflow-y-auto relative bg-black/0">
         {/* Global Particle Background */}
         <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -1 }}>
           <ParticleBackground opacity={opacity} />
@@ -56,7 +58,9 @@ function AppContent() {
           {/* Apps & Tools */}
           <Route path="/data-treya" element={<DataTreyaPage />} />
           <Route path="/experts-talk" element={<ExpertsTalk />} />
-          <Route path="/kalkios" element={<KalkiOS />} />
+          <Route path="/kalkios" element={
+            <KalkiOS />
+          } />
           <Route path="/gesture-ai" element={<GesturePage />} />
           
           {/* Redirects */}
@@ -78,7 +82,10 @@ export default function App() {
   return (
     <ThemeProvider>
       <ParticlesProvider>
-        <AppContent />
+        <div className="min-h-screen w-full overflow-y-auto relative bg-black/0">
+          <Cursor />
+          <AppContent />
+        </div>
       </ParticlesProvider>
     </ThemeProvider>
   );

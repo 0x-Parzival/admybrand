@@ -99,26 +99,29 @@ const InterfaceMockup: React.FC = () => {
           
           <div className="mt-12 text-center">
             <motion.h3 
-              className="text-2xl md:text-3xl font-bold mb-4"
+              className="text-3xl md:text-4xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
+              transition={{ duration: 0.6 }}
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                Intuitive
-              </span>{' '}
-              Interface
+              Take Command of the Future
             </motion.h3>
+            
             <motion.p 
-              className="text-gray-400 max-w-2xl mx-auto"
+              className="text-lg text-gray-400 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
             >
-              Experience a seamless blend of power and simplicity with our next-generation desktop environment.
-              Built for speed, security, and scalability.
+              No visual clutter. No dopamine traps.
+              Instead:
+              Transparent terminals
+              Fluent launcher tools
+              Command-responsive UI
+              Live AI agents you control
+              Built to calmly scale with your daily needs—whether dev, research, or scripting.
             </motion.p>
           </div>
         </motion.div>

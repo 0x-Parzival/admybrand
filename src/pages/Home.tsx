@@ -55,55 +55,11 @@ const buttons: ButtonProps[] = [
     image: '/images/who am i.jpg'
   },
   {
-    label: 'Aech',
-    path: '/aech',
-    color: 'from-green-600 to-teal-700',
-    image: '/images/aech.png'
-  },
-  {
-    label: 'Gesture',
-    path: '/gesture',
-    color: 'from-blue-600 to-indigo-700',
-    image: '/images/Gesture.png'
-  },
-  {
-    label: 'Ghibli Store',
-    path: '/ghibli-store',
-    color: 'from-orange-600 to-yellow-700',
-    image: '/images/ghibli store.png'
-  },
-  {
-    label: 'Spirituality',
-    path: '/spirituality',
-    color: 'from-purple-600 to-blue-700',
-    image: '/images/sprituality.png'
-  },
-  {
-    label: 'nand.aka',
-    path: '/nand.aka',
-    color: 'from-indigo-600 to-purple-700',
-    image: '/images/talkwithphd.jpeg'
-  },
-  {
-    label: 'Dev.Dat',
-    path: '/dev-dat',
-    color: 'from-green-500 to-green-700',
-    image: '/images/dev.png'
-  },
-  {
     label: 'Kalki OS',
     path: '/kalki',
     color: 'from-cyan-600 to-blue-700',
     image: '/images/kalki os.png'
-  },
-  {
-    label: 'Data-Treya',
-    path: '/data-treya',
-    color: 'from-blue-400 to-indigo-600',
-    image: '/images/data-treya-button.png',
-    logo: '/images/data-treya-logo.png'
-  },
-
+  }
 ];
 
 export default function Home() {
