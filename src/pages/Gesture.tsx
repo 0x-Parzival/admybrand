@@ -81,6 +81,20 @@ const Gesture: React.FC = () => {
                 transition={{ duration: 0.5 }}
               >
                 <HeroSection />
+                <div className="relative w-full h-[600px] mt-16 mb-24">
+                  <div className="relative z-10 rounded-2xl shadow-2xl shadow-cyan-500/20 border border-cyan-500/20">
+                    <img 
+                      src="/images/gesture.png" 
+                      alt="Gesture AI in Action" 
+                      className="w-full h-full object-cover rounded-2xl"
+                      style={{
+                        filter: 'brightness(0.9) contrast(1.1)'
+                      }}
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black/80" />
+                </div>
                 <FeaturesSection />
                 <UseCasesSection />
                 <DemoSection />

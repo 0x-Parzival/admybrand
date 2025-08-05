@@ -10,7 +10,7 @@ interface ButtonProps {
   logo?: string;
 }
 
-const Button = ({ label, path, color, image }: ButtonProps) => {
+const Button = ({ label, path, color, image, logo }: ButtonProps) => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
@@ -41,6 +41,17 @@ const Button = ({ label, path, color, image }: ButtonProps) => {
       }}>
         <div className="text-2xl">{`${label}`.toUpperCase()}</div>
         <div className="text-base opacity-75 dark:opacity-100">EXPLORE NOW</div>
+        {logo && (
+          <img 
+            src={logo} 
+            alt={`${label} logo`} 
+            className="w-12 h-12 absolute bottom-4 left-4"
+            style={{
+              filter: 'drop-shadow(0 0 10px rgba(0,0,0,0.5))',
+              zIndex: 50
+            }}
+          />
+        )}
       </div>
       <div className="absolute inset-0 bg-black/20 dark:bg-white/10" />
     </div>
@@ -59,6 +70,13 @@ const buttons: ButtonProps[] = [
     path: '/kalki',
     color: 'from-cyan-600 to-blue-700',
     image: '/images/kalki os.png'
+  },
+  {
+    label: 'Gesture AI',
+    path: '/gesture-ai',
+    color: 'from-green-600 to-lime-600',
+    image: '/images/gesture.png',
+    logo: '/images/gesture-logo.png'
   }
 ];
 

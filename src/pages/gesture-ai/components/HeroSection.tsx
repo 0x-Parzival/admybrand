@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
                 className="flex items-center gap-3 mb-6"
               >
                 <img 
-                  src="/images/gesture-ai-logo.png" 
+                  src="/images/gesture-logo.png" 
                   alt="Gesture AI Logo" 
                   className="h-12 w-auto"
                 />
@@ -86,7 +86,7 @@ const HeroSection: React.FC = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 rounded-2xl -rotate-6 blur-xl"></div>
                 <img 
-                  src="/images/gesture-ai-hero.png" 
+                  src="/images/gesture-logo.png" 
                   alt="Gesture AI in action" 
                   className="relative z-10 rounded-2xl shadow-2xl shadow-cyan-500/20 border border-cyan-500/20"
                 />

@@ -120,10 +120,18 @@ const DemoSection: React.FC = () => {
                 <div className="flex items-center">
                   <div className={`p-3 rounded-lg mr-4 ${
                     activeTab === module.id 
-                      ? 'bg-gradient-to-br from-cyan-500 to-emerald-500 text-white'
-                      : 'bg-white/5 text-cyan-400'
+                      ? 'bg-gradient-to-br from-cyan-500 to-emerald-500'
+                      : 'bg-white/5'
                   }`}>
-                    {module.icon}
+                    <img 
+                      src="/assets/gesture.png" 
+                      alt="Gesture AI" 
+                      className="w-8 h-8 object-cover"
+                      style={{
+                        filter: 'brightness(0.9) contrast(1.1)',
+                        transform: 'scale(0.8)'
+                      }}
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-1">{module.title}</h3>
@@ -163,15 +171,15 @@ const DemoSection: React.FC = () => {
               className="relative rounded-2xl overflow-hidden bg-black/30 border border-white/10 backdrop-blur-sm"
             >
               <div className="aspect-video bg-gradient-to-br from-cyan-500/5 to-emerald-500/5 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 flex items-center justify-center text-cyan-400">
-                    {activeModule.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">{activeModule.title} Demo</h3>
-                  <p className="text-gray-400 max-w-md mx-auto">
-                    {activeModule.description}
-                  </p>
-                  <div className="mt-6">
+                <div className="relative w-full h-full">
+                  <img 
+                    src="/images/gesture-logo.png" 
+                    alt="Gesture AI in action" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black/80" />
+                  <div className="absolute inset-0 flex items-center justify-center">
                     <button 
                       onClick={() => {
                         if (videoRef.current) {
