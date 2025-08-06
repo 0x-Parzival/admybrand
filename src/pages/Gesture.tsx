@@ -52,7 +52,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }> {
 const Gesture: React.FC = () => {
   useEffect(() => {
     // Set the page title
-    document.title = 'Gesture AI | Next-Gen Hand Gesture Recognition';
+    document.title = 'ADmyBRAND AI Suite | AI-Powered Marketing Platform';
     
     // Scroll to top on mount
     window.scrollTo(0, 0);
@@ -66,7 +66,7 @@ const Gesture: React.FC = () => {
     <ErrorBoundary>
       <div className="gesture-ai-page">
         <Helmet>
-          <meta name="description" content="Experience the future of human-computer interaction with Gesture AI's advanced hand gesture recognition technology. Control devices with simple hand movements." />
+          <meta name="description" content="Elevate your marketing with ADmyBRAND AI Suite – the unified platform that creates, manages, and optimizes campaigns autonomously across channels." />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Helmet>
@@ -84,8 +84,8 @@ const Gesture: React.FC = () => {
                 <div className="relative w-full h-[600px] mt-16 mb-24">
                   <div className="relative z-10 rounded-2xl shadow-2xl shadow-cyan-500/20 border border-cyan-500/20">
                     <img 
-                      src="/images/gesture.png" 
-                      alt="Gesture AI in Action" 
+                      src="/images/gesture-logo.png" 
+                      alt="ADmyBRAND AI Suite Illustration" 
                       className="w-full h-full object-cover rounded-2xl"
                       style={{
                         filter: 'brightness(0.9) contrast(1.1)'

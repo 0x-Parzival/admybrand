@@ -10,34 +10,34 @@ interface Feature {
 
 export const features: Feature[] = [
   {
-    title: 'Real-time Recognition',
-    description: 'Millisecond response time for seamless control',
+    title: 'AI Campaign Generator',
+    description: 'Generate high-performing ads and copy in seconds using generative AI',
     icon: React.createElement(FiZap, { className: 'w-8 h-8 text-cyan-400' }),
     highlight: true
   },
   {
-    title: 'Cross-platform',
-    description: 'Compatible with web, mobile, desktop, and embedded systems',
+    title: 'Omnichannel Automation',
+    description: 'Plan, launch, and manage campaigns across social, search, email, and more',
     icon: React.createElement(FiGlobe, { className: 'w-8 h-8 text-cyan-400' })
   },
   {
-    title: 'Custom Gestures',
-    description: 'Create and train personalized gestures for unique use cases',
+    title: 'Creative Intelligence',
+    description: 'Continuously tests creatives and optimizes messaging for your audience',
     icon: React.createElement(FiLayers, { className: 'w-8 h-8 text-cyan-400' })
   },
   {
     title: 'Privacy First',
-    description: 'All computation runs locally. Your data never leaves your device.',
+    description: 'Your data and customer information stay secure and compliant',
     icon: React.createElement(FiShield, { className: 'w-8 h-8 text-cyan-400' })
   },
   {
-    title: 'AI Learning Layer',
-    description: 'Learns and adapts to your gesture patterns over time',
+    title: 'Predictive Insights',
+    description: 'Forecast performance and allocate budget automatically for maximum ROI',
     icon: React.createElement(FiCpu, { className: 'w-8 h-8 text-cyan-400' })
   },
   {
-    title: 'Developer Friendly',
-    description: 'Comprehensive SDK and API for easy integration',
+    title: 'Open API',
+    description: 'Integrate ADmyBRAND AI Suite with your existing stack effortlessly',
     icon: React.createElement(FiCode, { className: 'w-8 h-8 text-cyan-400' })
   }
 ];

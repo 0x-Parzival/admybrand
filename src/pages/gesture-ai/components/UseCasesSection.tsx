@@ -92,7 +92,7 @@ const UseCasesSection: React.FC = () => {
             className="inline-block"
           >
             <span className="px-4 py-2 text-sm font-medium text-cyan-400 bg-cyan-400/10 rounded-full mb-4 inline-block">
-              Endless Possibilities
+              Endless Marketing Possibilities
             </span>
           </motion.div>
           
@@ -103,7 +103,7 @@ const UseCasesSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-100"
           >
-            Transform Your Industry with Gesture AI
+            Transform Your Marketing with ADmyBRAND AI Suite
           </motion.h2>
           
           <motion.p
@@ -113,7 +113,7 @@ const UseCasesSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-gray-400"
           >
-            Discover how Gesture AI is revolutionizing interaction across multiple industries and applications.
+            Discover how ADmyBRAND AI Suite drives growth across diverse industries and use-cases.
           </motion.p>
         </div>
 

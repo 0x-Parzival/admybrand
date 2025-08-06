@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
+import customLogo from '../../../assets/1630616908791.jpg';
 
 const HeroSection: React.FC = () => {
   return (
@@ -24,12 +25,12 @@ const HeroSection: React.FC = () => {
                 className="flex items-center gap-3 mb-6"
               >
                 <img 
-                  src="/images/gesture-logo.png" 
-                  alt="Gesture AI Logo" 
+                  src={customLogo} 
+                  alt="ADmyBRAND AI Suite Logo" 
                   className="h-12 w-auto"
                 />
                 <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-                  Gesture AI
+                  ADmyBRAND AI Suite
                 </span>
               </motion.div>
               
@@ -39,9 +40,9 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white"
               >
-                Control the Digital World{' '}
+                Unleash AI-Driven Marketing{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">
-                  with Your Hands
+                  Across Every Channel
                 </span>
               </motion.h1>
               
@@ -51,7 +52,7 @@ const HeroSection: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-lg text-gray-300 mb-8"
               >
-                Next-gen gesture recognition powered by AI — interact with devices using intuitive hand movements.
+                Create, launch, and optimize campaigns automatically with our end-to-end artificial intelligence marketing suite.
               </motion.p>
               
               <motion.div 
@@ -86,8 +87,8 @@ const HeroSection: React.FC = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 rounded-2xl -rotate-6 blur-xl"></div>
                 <img 
-                  src="/images/gesture-logo.png" 
-                  alt="Gesture AI in action" 
+                  src={customLogo} 
+                  alt="ADmyBRAND AI Suite Dashboard" 
                   className="relative z-10 rounded-2xl shadow-2xl shadow-cyan-500/20 border border-cyan-500/20"
                 />
               </div>

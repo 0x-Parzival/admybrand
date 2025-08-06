@@ -22,7 +22,7 @@ const FeaturesSection: React.FC = () => {
             className="inline-block"
           >
             <span className="px-4 py-2 text-sm font-medium text-cyan-400 bg-cyan-400/10 rounded-full mb-4 inline-block">
-              Why Choose Gesture AI
+              Why Choose ADmyBRAND AI Suite
             </span>
           </motion.div>
           
@@ -33,7 +33,7 @@ const FeaturesSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-100"
           >
-            Powerful Features for Intuitive Control
+            Smarter Features for Autonomous Marketing
           </motion.h2>
           
           <motion.p
@@ -43,7 +43,7 @@ const FeaturesSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-gray-400"
           >
-            Experience the future of human-computer interaction with our advanced gesture recognition technology.
+            Experience next-level marketing automation powered by cutting-edge generative AI.
           </motion.p>
         </div>
 

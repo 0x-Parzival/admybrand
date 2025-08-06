@@ -107,7 +107,7 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-gray-400"
           >
-            Have questions or want to discuss how Gesture AI can transform your business? 
+            Have questions or want to discuss how ADmyBRAND AI Suite can transform your business? 
             We'd love to hear from you.
           </motion.p>
         </div>

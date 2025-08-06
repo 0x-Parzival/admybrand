@@ -88,7 +88,7 @@ const DemoSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-100"
           >
-            Experience Gesture AI
+            Experience ADmyBRAND AI Suite
           </motion.h2>
           
           <motion.p
@@ -98,7 +98,7 @@ const DemoSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-gray-400"
           >
-            Try our interactive demos to see how Gesture AI can transform your workflow.
+            Try our interactive demos to see how ADmyBRAND AI Suite can supercharge your marketing workflows.
           </motion.p>
         </div>
 
@@ -125,7 +125,7 @@ const DemoSection: React.FC = () => {
                   }`}>
                     <img 
                       src="/assets/gesture.png" 
-                      alt="Gesture AI" 
+                      alt="ADmyBRAND AI Suite" 
                       className="w-8 h-8 object-cover"
                       style={{
                         filter: 'brightness(0.9) contrast(1.1)',
@@ -174,7 +174,7 @@ const DemoSection: React.FC = () => {
                 <div className="relative w-full h-full">
                   <img 
                     src="/images/gesture-logo.png" 
-                    alt="Gesture AI in action" 
+                    alt="ADmyBRAND AI Suite in action" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
@@ -241,12 +241,12 @@ const DemoSection: React.FC = () => {
 
             {/* Call to Action */}
             <div className="mt-8 text-center">
-              <p className="text-gray-400 mb-6">Ready to integrate Gesture AI into your project?</p>
+              <p className="text-gray-400 mb-6">Ready to integrate ADmyBRAND AI Suite into your stack?</p>
               <a 
                 href="#contact" 
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 text-black font-semibold rounded-lg hover:opacity-90 transition-opacity group"
               >
-                Get Started with Gesture AI
+                Get Started with ADmyBRAND AI Suite
                 <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

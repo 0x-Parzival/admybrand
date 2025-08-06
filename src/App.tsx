@@ -40,7 +40,7 @@ function AppContent() {
         
         <Routes>
           {/* Main Navigation */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Gesture />} />
           <Route path="/whoami" element={<WhoAmI />} />
           <Route path="/whoishe" element={<WhoIsShe />} />
           
