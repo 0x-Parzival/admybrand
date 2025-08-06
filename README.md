@@ -1,26 +1,64 @@
-# Spiritual Resources Website
+# 🌟 Spiritual Resources Website
 
-A modern, interactive website for exploring spiritual resources and ancient texts with a contemporary analytical perspective.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-v18.2.0-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-v4.9.5-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.3.0-blue.svg)](https://tailwindcss.com/)
 
-## Features
+A modern, interactive website for exploring spiritual resources and ancient texts with a contemporary analytical perspective. The site combines traditional wisdom with modern web technologies to create an engaging and informative experience.
 
-- Interactive Bhagwatam Puran Analysis
-- Modern, cyberpunk-inspired UI
-- Particle background effects
-- Responsive design
-- Interactive charts and visualizations
+## 🚀 Features
 
-## Prerequisites
+- 📊 Interactive Bhagwatam Puran Analysis with advanced data visualization
+- 🎨 Modern, cyberpunk-inspired UI with dynamic particle effects
+- 📱 Fully responsive design for all devices
+- 📈 Interactive charts and visualizations using Chart.js
+- 🎯 TypeScript-powered development for type safety and maintainability
+- 🎨 Tailwind CSS for rapid styling and consistent design
+- 🔄 Real-time updates with React context and state management
 
-- Node.js (v14 or higher)
-- npm or yarn
+## 🛠️ Tech Stack
 
-## Installation
+- **Frontend Framework**: React 18.2.0
+- **Type Safety**: TypeScript 4.9.5
+- **Styling**: Tailwind CSS 3.3.0
+- **Charting**: Chart.js 4.x
+- **Routing**: React Router 6.x
+- **Particles**: tsparticles 3.x
+- **Icons**: React Icons
+- **State Management**: React Context API
+- **Development Tools**: Vite, ESLint, Prettier
+
+## 📦 Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+│   ├── ParticleBackground/ # Particle effects implementation
+│   ├── DataTreya/        # Data visualization components
+│   └── Layout/          # Layout components
+├── pages/          # Page components
+├── context/        # React context providers
+├── hooks/         # Custom React hooks
+├── types/         # TypeScript type definitions
+├── utils/         # Utility functions
+├── assets/        # Static assets
+└── App.tsx        # Main application component
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v8 or higher) or yarn (v1.22 or higher)
+
+### Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd spiritual-site
+git clone https://github.com/0x-Parzival/site.git
+cd site
 ```
 
 2. Install dependencies:
@@ -30,17 +68,16 @@ npm install
 yarn install
 ```
 
-## Running the Development Server
-
+3. Start the development server:
 ```bash
-npm start
+npm run dev
 # or
-yarn start
+yarn dev
 ```
 
 The site will be available at `http://localhost:3000`
 
-## Building for Production
+### Building for Production
 
 ```bash
 npm run build
@@ -48,35 +85,33 @@ npm run build
 yarn build
 ```
 
-## Technologies Used
+## 🎯 Development
 
-- React
-- TypeScript
-- Tailwind CSS
-- Chart.js
-- React Router
-- React Icons
+### Available Scripts
 
-## Project Structure
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build production-ready files
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
 
-```
-src/
-  ├── components/     # Reusable components
-  ├── pages/         # Page components
-  ├── types/         # TypeScript type definitions
-  ├── data/          # Static data
-  ├── context/       # React context providers
-  └── App.tsx        # Main application component
+### Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```env
+VITE_API_URL=https://your-api-url.com
+VITE_APP_VERSION=1.0.0
 ```
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
