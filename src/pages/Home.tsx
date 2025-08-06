@@ -77,6 +77,12 @@ const buttons: ButtonProps[] = [
     color: 'from-green-600 to-lime-600',
     image: '/images/gesture.png',
     logo: '/images/gesture-logo.png'
+  },
+  {
+    label: 'Aech',
+    path: '/aech',
+    color: 'from-purple-600 to-indigo-700',
+    image: '/images/aech.png'
   }
 ];
 
