@@ -1,4 +1,4 @@
-# ✨ Gesture AI SaaS Landing Page
+# ✨ AdMyBrand SaaS Landing Page
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-v18.2.0-blue.svg)](https://reactjs.org/)
