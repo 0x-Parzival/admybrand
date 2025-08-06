@@ -1,23 +1,24 @@
-# 🌟 Spiritual Resources Website
+# ✨ Gesture AI SaaS Landing Page
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-v18.2.0-blue.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-v4.9.5-blue.svg)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.3.0-blue.svg)](https://tailwindcss.com/)
 
-A modern, interactive website for exploring spiritual resources and ancient texts with a contemporary analytical perspective. The site combines traditional wisdom with modern web technologies to create an engaging and informative experience.
+Gesture AI is a SaaS platform that turns human gestures into real-time commands with AI-powered computer-vision. This repo contains the marketing & docs site – a high-performance React + Tailwind landing page featuring animated backgrounds, rich demos, and responsive design.
 
-## 🚀 Features
+## 🚀 Landing-Page Highlights
 
-- 📊 Interactive Bhagwatam Puran Analysis with advanced data visualization
-- 🎨 Modern, cyberpunk-inspired UI with dynamic particle effects
-- 📱 Fully responsive design for all devices
-- 📈 Interactive charts and visualizations using Chart.js
-- 🎯 TypeScript-powered development for type safety and maintainability
-- 🎨 Tailwind CSS for rapid styling and consistent design
-- 🔄 Real-time updates with React context and state management
+- 🎬 Hero section with WebGL particle background + Framer-motion text reveals
+- 📹 Live demo carousel showcasing gesture detection videos
+- ⚡️ Lighthouse-perfect performance (uses lazy-loaded assets & code-splitting)
+- 📱 Mobile-first, fully responsive Tailwind layout
+- 🧩 Reusable component library (buttons, cards, pricing tiers)
+- 🛠 Markdown-powered docs section rendered via React Router
+- 🔍 SEO-optimised metadata & social preview cards
+- 🌐 i18n-ready architecture with react-i18next (optional)
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Tooling
 
 - **Frontend Framework**: React 18.2.0
 - **Type Safety**: TypeScript 4.9.5
