@@ -2,21 +2,15 @@ import React, { useCallback } from 'react';
 import { useParticles } from '../context/ParticlesContext';
 import Particles from '@tsparticles/react';
 import { Engine } from '@tsparticles/engine';
-import { loadFull } from '@tsparticles/react';
+import loadFull from '@tsparticles/react';
 
 interface ParticleBackgroundProps {
   opacity?: number;
 }
 
 const ParticleBackground: React.FC<ParticleBackgroundProps> = ({ opacity = 0.5 }) => {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadFull(engine);
-  }, []);
-
   return (
     <Particles
-      id="tsparticles"
-      init={particlesInit}
       options={{
         background: {
           color: {
@@ -30,7 +24,10 @@ const ParticleBackground: React.FC<ParticleBackgroundProps> = ({ opacity = 0.5 }
               enable: true,
               mode: "repulse",
             },
-            resize: true,
+            resize: {
+              enable: true,
+              delay: 0.5
+            },
           },
           modes: {
             repulse: {
@@ -61,14 +58,10 @@ const ParticleBackground: React.FC<ParticleBackgroundProps> = ({ opacity = 0.5 }
             straight: false,
           },
           number: {
-            density: {
-              enable: true,
-              value: 800
-            },
             value: 80
           },
           opacity: {
-            value: opacity
+            value: opacity,
           },
           shape: {
             type: "circle"
