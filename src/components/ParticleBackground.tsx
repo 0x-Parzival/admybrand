@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import { useParticles } from '../context/ParticlesContext';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import type { Engine } from 'tsparticles-engine';
+import Particles from '@tsparticles/react';
+import { Engine } from '@tsparticles/engine';
+import { loadFull } from '@tsparticles/react';
 
 interface ParticleBackgroundProps {
   opacity?: number;
@@ -63,18 +63,21 @@ const ParticleBackground: React.FC<ParticleBackgroundProps> = ({ opacity = 0.5 }
           number: {
             density: {
               enable: true,
-              value_area: 800,
+              value: 800
             },
-            value: 80,
+            value: 80
           },
           opacity: {
-            value: opacity,
+            value: opacity
           },
           shape: {
-            type: "circle",
+            type: "circle"
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: {
+              min: 1,
+              max: 5
+            }
           },
         },
         detectRetina: true,
